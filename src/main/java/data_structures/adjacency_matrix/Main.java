@@ -25,5 +25,7 @@ public class Main {
         graph.depthFirstSearch(0);
         graph.depthFirstSearch(1);
 
+        graph.breadthFirstSearch(0);
+
     }
 }
