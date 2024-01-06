@@ -56,7 +56,8 @@ public class DynamicArray {
         int newCapacity = capacity * 2;
         Object[] newArray = new Object[newCapacity];
         if (capacity >= 0)
-            System.arraycopy(array, 0, newArray, 0, capacity);
+            for (int i = 0; i < size; i++)
+                newArray[i] = array[i];
         this.array = newArray;
         this.capacity = newCapacity;
     }
@@ -65,7 +66,8 @@ public class DynamicArray {
         int newCapacity = capacity / 2;
         Object[] newArray = new Object[newCapacity];
         if (capacity >= 0)
-            System.arraycopy(array, 0, newArray, 0, capacity);
+            for (int i = 0; i < size; i++)
+                newArray[i] = array[i];
         this.array = newArray;
         this.capacity = newCapacity;
     }
