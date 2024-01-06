@@ -1,4 +1,4 @@
-package data_structures_and_algorithms.queue.priority_queue;
+package data_structures.queue.priority_queue;
 
 import lombok.ToString;
 

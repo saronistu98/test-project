@@ -1,4 +1,4 @@
-package data_structures_and_algorithms.stack;
+package data_structures.stack;
 
 import java.util.Stack;
 

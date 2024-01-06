@@ -1,4 +1,4 @@
-package data_structures_and_algorithms.dynamic_array;
+package data_structures.dynamic_array;
 
 public class Main {
     public static void main(String[] args) {
