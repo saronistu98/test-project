@@ -1,8 +1,8 @@
-package data_structures.graph;
+package data_structures.adjacency_matrix;
 
 import java.util.ArrayList;
 
-public class Graph {
+class Graph {
 
     private final ArrayList<Node> nodes;
     private final int[][] matrix;

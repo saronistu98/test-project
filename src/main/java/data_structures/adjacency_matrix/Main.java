@@ -1,7 +1,9 @@
-package data_structures.graph;
+package data_structures.adjacency_matrix;
 
 public class Main {
     public static void main(String[] args) {
+
+        // Good time complexity for searching, bad for memory
 
         Graph graph = new Graph(5);
         graph.add(new Node('A'));

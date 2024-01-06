@@ -1,9 +1,9 @@
-package data_structures.graph;
+package data_structures.adjacency_list;
 
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class Node {
+class Node {
 
     char data;
 
