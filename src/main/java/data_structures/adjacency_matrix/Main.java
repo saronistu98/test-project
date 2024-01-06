@@ -19,7 +19,11 @@ public class Main {
         graph.add(4, 2);
 
         System.out.println(graph.checkEdge(0, 1));
+        System.out.println(graph.checkEdge(1, 4));
         System.out.println(graph);
+
+        graph.depthFirstSearch(0);
+        graph.depthFirstSearch(1);
 
     }
 }

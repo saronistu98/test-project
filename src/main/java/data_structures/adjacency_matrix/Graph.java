@@ -20,8 +20,24 @@ class Graph {
         this.matrix[source][destination] = 1;
     }
 
-    public boolean checkEdge(int source, int destination) {
+    boolean checkEdge(int source, int destination) {
         return this.matrix[source][destination] == 1;
+    }
+
+    void depthFirstSearch(int source) {
+        boolean[] visited = new boolean[matrix.length];
+        depthFirstSearchHelper(source, visited);
+    }
+
+    private void depthFirstSearchHelper(int source, boolean[] visited) {
+        if (visited[source])
+            return;
+        visited[source] = true;
+        System.out.println(nodes.get(source).data + " visited");
+        for (int i = 0; i < matrix[source].length; i++) {
+            if (matrix[source][i] == 1)
+                depthFirstSearchHelper(i, visited);
+        }
     }
 
     @Override
